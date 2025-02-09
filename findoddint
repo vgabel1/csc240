@@ -1,0 +1,22 @@
+public class FindOdd {
+    public static int findIt(int[] a) {
+      //loop through the array
+        for (int i = 0; i < a.length; i++) {
+            //initialize each element's count to 0
+          int count = 0;
+          //look for duplicates of each element
+          for (int j = 0; j < a.length; j++) {
+            //found one!    
+            if (a[i] == a[j]) {
+                  count++;
+                }
+            }
+           //if one is odd, we end the loop before re-initializing count to 0 for next element 
+          if (count % 2 == 1) {
+              return a[i];
+            }
+        }
+    //default return
+      return a[0];
+    }
+}
