@@ -1,0 +1,16 @@
+import java.util.LinkedList;
+public class Kata {
+
+  public static String solution(String str) {
+    //storing the string as an array of characters
+    char[] chars = str.toCharArray();
+    //empty string to build the reversed one from
+    String rts = "";
+    //putting the characters in the empty string in reversed order
+    for (int i = chars.length - 1; i > -1; i--) {
+      rts += chars[i];
+    }
+    return rts;
+  }
+
+}
